@@ -10,10 +10,9 @@ In order to use ReactionTime, add the following syntax in a Jest testing environ
 
 Example syntax as follows:
 
-`
-reactiontime.createRootTest('src/index.js');
-reactiontime.packageTest('package.json');
-`
+`reactiontime.createRootTest('src/index.js');`
+<br>
+`reactiontime.packageTest('package.json');`
 
 ... 'src/index.js' is equal to the relative path of the highest component of your react tree.
 <br>

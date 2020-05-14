@@ -1,6 +1,6 @@
 {
     "name": "reactiontime",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "description": "testing library for concurrent mode",
     "git repository": "https://github.com/oslabs-beta/ReactionTime",
     "scripts": {
@@ -9,11 +9,9 @@
     "dependencies": {
         "@babel/core": "^7.9.6",
         "@babel/plugin-transform-modules-commonjs": "^7.9.6",
+        "@testing-library/react": "^10.0.4",
         "babel-jest": "^26.0.1",
         "babel-preset-react": "^6.24.1",
-        "react": "0.0.0-experimental-33c3af284",
-        "react-dom": "0.0.0-experimental-33c3af284",
-        "react-test-renderer": "^16.13.1",
         "jest": "^26.0.1"
     },
     "license": "MIT",

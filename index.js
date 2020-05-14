@@ -14,7 +14,7 @@ function createRootTest(indexPath) {
     })
 }
 
-// test for react experiemental mode
+// test for react experimental mode
 function packageTest(packageFilePath){
     let packageFile = fs.readFileSync(path.resolve(__dirname, `../../${packageFilePath}`)).toString("utf-8");
 
@@ -23,7 +23,7 @@ function packageTest(packageFilePath){
     })
 }
 
-// testing for suspense fallback
+// testing if a submitted fallback properly falls back
 function fallbackTest(suspenseComponent, fallback){
     // if suspense component does not exist...
     if (typeof suspenseComponent === 'undefined') {
@@ -58,7 +58,7 @@ function fallbackTest(suspenseComponent, fallback){
     }
 }
 
-//this test should make sure that a component renders with a suspense tag
+// tests if a child componenet properly suspends and renders a test fallback
 function suspenseTest(suspenseComponent){
     test('renders suspense fallback on a child component', () => {
         const ComponentWrapper = (suspenseComponent) => {

@@ -1,23 +1,85 @@
 {
-    "name": "reactiontime",
-    "version": "0.0.5",
-    "description": "testing library for concurrent mode",
-    "git repository": "https://github.com/oslabs-beta/ReactionTime",
-    "scripts": {
-        "jest": "jest reactiontime.test.js"
-    },
-    "dependencies": {
-        "@babel/core": "^7.9.6",
-        "@babel/plugin-transform-modules-commonjs": "^7.9.6",
-        "@testing-library/react": "^10.0.4",
-        "babel-jest": "^26.0.1",
-        "babel-preset-react": "^6.24.1",
-        "jest": "^26.0.1"
-    },
-    "license": "MIT",
-    "devDependencies": {
-        "@babel/preset-env": "^7.9.6",
-        "enzyme": "^3.11.0",
-        "enzyme-adapter-react-16": "^1.15.2"
+  "name": "reactiontime",
+  "productName": "reactiontime",
+  "version": "1.0.0",
+  "description": "ReactionTime provides a simpler way to write tests for React's Experimental Concurrent Mode",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "authors": {
+    "names": ["Christian Hubbard", "Jae Myung", "Anthony Shen", "Jimmy Phong"], 
+    "emails": ["chrishubbard92@hotmail.com", "jhm304@gmail.com", "tshen815@gmail.com", "jayacados@gmail.com"]
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "my_new_app"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ],
+      "plugins": [
+        [
+          "@electron-forge/plugin-webpack",
+          {
+            "mainConfig": "./webpack.main.config.js",
+            "renderer": {
+              "config": "./webpack.renderer.config.js",
+              "entryPoints": [
+                {
+                  "html": "./src/index.html",
+                  "js": "./src/renderer.js",
+                  "name": "main_window"
+                }
+              ]
+            }
+          }
+        ]
+      ]
     }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.51",
+    "@electron-forge/maker-deb": "^6.0.0-beta.51",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.51",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.51",
+    "@electron-forge/maker-zip": "^6.0.0-beta.51",
+    "@electron-forge/plugin-webpack": "^6.0.0-beta.51",
+    "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
+    "css-loader": "^3.5.3",
+    "electron": "8.3.0",
+    "node-loader": "^0.6.0",
+    "style-loader": "^0.23.1"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oslabs-beta/ReactionTime"
+  }
 }

@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-
 const testingLibrary = require('@testing-library/react')
+import react from 'react';
+const ComponentWrapper = require('./app')
 
 // test for creatRoot() and its proper usage in index.js
 function createRootTest(indexPath) {
@@ -62,7 +63,7 @@ function fallbackTest(suspenseComponent, fallback){
 function suspenseTest(suspenseComponent){
     test('renders suspense fallback on a child component', () => {
         const ComponentWrapper = (suspenseComponent) => {
-          return (
+         return (
             <React.Suspense fallback={'testFallback'}>
               <suspenseComponent />
             </React.Suspense>
@@ -80,5 +81,5 @@ module.exports = {
     createRootTest,
     packageTest,
     fallbackTest,
-    suspenseTest
+    suspenseTest,
 }

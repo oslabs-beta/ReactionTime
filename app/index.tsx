@@ -1,16 +1,27 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
-import { AppContainer as ReactHotAppContainer } from 'react-hot-loader';
 import Beaker from './components/Beaker'
+import { Drawer, List, ListItem } from '@material-ui/core';
+import HomeIcon from '@material-ui/icons/HomeOutlined';
+import Timer from '@material-ui/icons/Timer';
 
 
-const AppContainer = process.env.PLAIN_HMR ? Fragment : ReactHotAppContainer;
 
-document.addEventListener('DOMContentLoaded', () =>
+document.addEventListener('DOMContentLoaded', () => 
   render(
-    <AppContainer>
+    <div>
+      <Drawer variant="permanent">
+        <List>
+          <ListItem>
+            <HomeIcon fontSize="large" /> 
+          </ListItem>
+          <ListItem>
+            <Timer fontSize="large" />
+          </ListItem>
+        </List>
+      </Drawer>
       <Beaker />
-    </AppContainer>,
+    </div>,
     document.getElementById('root')
   )
 );

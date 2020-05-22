@@ -238,7 +238,6 @@
     "eslint-plugin-testcafe": "^0.2.1",
     "fbjs-scripts": "^1.2.0",
     "file-loader": "^5.0.2",
-    "husky": "^4.2.5",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.1.0",
     "lint-staged": "^10.0.2",

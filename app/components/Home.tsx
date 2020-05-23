@@ -1,13 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import routes from '../constants/routes.json';
-import styles from './Home.css';
+import React from 'react'
 
 export default function Home() {
-  return (
-    <div className={styles.container} data-tid="container">
-      <h2>Home</h2>
-      <Link to={routes.COUNTER}>to Counter</Link>
-    </div>
-  );
+    return (
+        <div>
+            <h1>COUNTRY ROADS</h1>
+            <h1>TAKE ME HOME</h1>
+        </div>
+    )
 }

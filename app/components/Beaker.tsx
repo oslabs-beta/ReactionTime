@@ -10,7 +10,7 @@ import { FallbackTest } from "./FallbackTest";
 import { SuspenseTest } from "./SuspenseTest";
 
 // Import stylesheet for flexbox grid
-import "./styles.css";
+import "./Beaker.css";
 
 // Import Material UI Card Component
 import { makeStyles } from "@material-ui/core/styles";

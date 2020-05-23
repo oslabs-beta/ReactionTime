@@ -1,7 +1,7 @@
 import React from "react";
 
 // import react router
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { MemoryRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 // import routes for react router
 import { CreateRootTest } from "./CreateRootTest";
@@ -43,8 +43,8 @@ export default function SimpleCard() {
   // Rendering our Components Below
   return (
     // Begin 2x2
-    <Router>
-      <div className="grid2x2">
+    // <Router>
+      <div className="grid2x2" style={{paddingLeft: '80px'}}>
         {/* Begin Card 1 */}
         <div className="box box1">
           <Card className={classes.root}>
@@ -60,10 +60,13 @@ export default function SimpleCard() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" component={Link} to={"/CreateRootTest"}>
-                {" "}
-                Code Snippet{" "}
-              </Button>
+           
+                <Button size="small" component={Link} to={'/CreateRootTest'}>
+                  {' '}
+                  Code Snippet{' '}
+                </Button>
+              {/* <Link to="/createroottest">Code Snippet</Link> */}
+              
             </CardActions>
           </Card>
         </div>
@@ -83,9 +86,9 @@ export default function SimpleCard() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" component={Link} to={"/PackageTest"}>
-                {" "}
-                Code Snippet{" "}
+              <Button size="small" component={Link} to={'/PackageTest'}>
+                {' '}
+                Code Snippet{' '}
               </Button>
             </CardActions>
           </Card>
@@ -106,9 +109,9 @@ export default function SimpleCard() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" component={Link} to={"/FallBackTest"}>
-                {" "}
-                Code Snippet{" "}
+              <Button size="small" component={Link} to={'/FallBackTest'}>
+                {' '}
+                Code Snippet{' '}
               </Button>
             </CardActions>
           </Card>
@@ -129,34 +132,14 @@ export default function SimpleCard() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" component={Link} to={"/SuspenseTest"}>
-                {" "}
-                Code Snippet{" "}
+              <Button size="small" component={Link} to={'/SuspenseTest'}>
+                {' '}
+                Code Snippet{' '}
               </Button>
             </CardActions>
           </Card>
         </div>
-        {/* End Card 4 */}
-
-        {/* Switch Begin */}
-        <Switch>
-          <Route exact path="/CreateRootTest">
-            <CreateRootTest />
-          </Route>
-          <Route exact path="/FallbackTest">
-            <FallbackTest />
-          </Route>
-          <Route exact path="/PackageTest">
-            <PackageTest />
-          </Route>
-          <Route exact path="/SuspenseTest">
-            <SuspenseTest />
-          </Route>
-        </Switch>
-        {/* Switch End */}
-
-        {/* End 2x2 */}
       </div>
-    </Router>
+    // </Router>
   );
 }

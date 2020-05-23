@@ -1,41 +1,41 @@
 import React from 'react';
 import {Component} from 'react'; 
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 const Logo = require("./resources/logo.png");
 const Background = require('./resources/0-bg/jpg');
 
-const Wrapper = styled.div`
-text-align: center;
-background-image: url(${Background});
-background-size: cover;
-height: 100em;
-`
+// const Wrapper = styled.div`
+// text-align: center;
+// background-image: url(${Background});
+// background-size: cover;
+// height: 100em;
+// `
 
-const Image = styled.img`
-    width: 30em;
-    height: 30em;
-`
-const Title = styled.h1`
-    padding: 1em;
-    color: white;
-    font-weight: 700;
-    font-style: italic;
-`
+// const Image = styled.img`
+//     width: 30em;
+//     height: 30em;
+// `
+// const Title = styled.h1`
+//     padding: 1em;
+//     color: white;
+//     font-weight: 700;
+//     font-style: italic;
+// `
 
-const SubTitle = styled.h5`
-    color: white;
-    font-style: italic;
-`
+// const SubTitle = styled.h5`
+//     color: white;
+//     font-style: italic;
+// `
 
-const Text = styled.p`
-    padding: 2em;
-    color: white;
-    font-weight: 500;
-    margin-left: 40em;
-    margin-right: 40em;
-    text-align: center;
-`
+// const Text = styled.p`
+//     padding: 2em;
+//     color: white;
+//     font-weight: 500;
+//     margin-left: 40em;
+//     margin-right: 40em;
+//     text-align: center;
+// `
 
 
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 // import react router
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { MemoryRouter as Router, Route, Link } from "react-router-dom";
 
 // import routes for react router
 import { CreateRootTest } from "./CreateRootTest";
@@ -44,7 +44,7 @@ export default function SimpleCard() {
   return (
     // Begin 2x2
     <Router>
-      <div className="grid2x2">
+      <div className="grid2x2" style={{paddingLeft: '80px'}}>
         {/* Begin Card 1 */}
         <div className="box box1">
           <Card className={classes.root}>
@@ -139,7 +139,7 @@ export default function SimpleCard() {
         {/* End Card 4 */}
 
         {/* Switch Begin */}
-        <Switch>
+        
           <Route exact path="/CreateRootTest">
             <CreateRootTest />
           </Route>
@@ -152,7 +152,7 @@ export default function SimpleCard() {
           <Route exact path="/SuspenseTest">
             <SuspenseTest />
           </Route>
-        </Switch>
+        
         {/* Switch End */}
 
         {/* End 2x2 */}

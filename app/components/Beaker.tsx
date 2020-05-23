@@ -43,7 +43,7 @@ export default function SimpleCard() {
   // Rendering our Components Below
   return (
     // Begin 2x2
-    <Router>
+    // <Router>
       <div className="grid2x2" style={{paddingLeft: '80px'}}>
         {/* Begin Card 1 */}
         <div className="box box1">
@@ -60,12 +60,13 @@ export default function SimpleCard() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Link to="/CreateRootTest">
+           
                 <Button size="small" component={Link} to={'/CreateRootTest'}>
                   {' '}
                   Code Snippet{' '}
                 </Button>
-              </Link>
+              {/* <Link to="/createroottest">Code Snippet</Link> */}
+              
             </CardActions>
           </Card>
         </div>
@@ -138,27 +139,7 @@ export default function SimpleCard() {
             </CardActions>
           </Card>
         </div>
-        {/* End Card 4 */}
-
-        {/* Switch Begin */}
-        
-          <Route exact path="/CreateRootTest">
-            <CreateRootTest />
-          </Route>
-          <Route exact path="/FallbackTest">
-            <FallbackTest />
-          </Route>
-          <Route exact path="/PackageTest">
-            <PackageTest />
-          </Route>
-          <Route exact path="/SuspenseTest">
-            <SuspenseTest />
-          </Route>
-        
-        {/* Switch End */}
-
-        {/* End 2x2 */}
       </div>
-    </Router>
+    // </Router>
   );
 }

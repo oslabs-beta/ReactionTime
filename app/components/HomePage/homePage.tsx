@@ -2,29 +2,37 @@ import React from 'react';
 import {Component} from 'react'; 
 
 import styled from 'styled-components';
-import Logo from "./logo.png";
+const Logo = require("./resources/logo.png");
+const Background = require('./resources/0-bg/jpg');
+
+const Wrapper = styled.div`
+text-align: center;
+background-image: url(${Background});
+background-size: cover;
+height: 100em;
+`
 
 const Image = styled.img`
     width: 30em;
     height: 30em;
-    align-items: center;
-  
 `
 const Title = styled.h1`
-    text-align: center;
+    padding: 2em;
+    color: white;
+    font-weight: 700;
 `
 
 
 class HomePage extends Component {
     render() {
         return (
-            <div>
+            <Wrapper>
                 <Title>Welcome to ReactionTime</Title>
                 <Image
                  src={Logo} alt="ReactionTime Logo"
                  >
                  </Image>
-            </div>
+            </Wrapper>
         )
     }
 }

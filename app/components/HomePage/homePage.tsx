@@ -1,59 +1,26 @@
 import React from 'react';
 import {Component} from 'react'; 
-// import styled from 'styled-components';
+import './homePage.css';
 
-const Logo = require("./resources/logo.png");
-const Background = require('./resources/0-bg/jpg');
-
-// const Wrapper = styled.div`
-// text-align: center;
-// background-image: url(${Background});
-// background-size: cover;
-// height: 100em;
-// `
-
-// const Image = styled.img`
-//     width: 30em;
-//     height: 30em;
-// `
-// const Title = styled.h1`
-//     padding: 1em;
-//     color: white;
-//     font-weight: 700;
-//     font-style: italic;
-// `
-
-// const SubTitle = styled.h5`
-//     color: white;
-//     font-style: italic;
-// `
-
-// const Text = styled.p`
-//     padding: 2em;
-//     color: white;
-//     font-weight: 500;
-//     margin-left: 40em;
-//     margin-right: 40em;
-//     text-align: center;
-// `
+import logo from "./resources/logo.png";
 
 
 
 class HomePage extends Component {
     render() {
         return (
-            <Wrapper>
-                <Title>Welcome to ReactionTime</Title>
-                    <SubTitle>A SIMPLER WAY TO WRITE TESTS FOR REACT'S EXPERIMENTAL CONCURRENT MODE</SubTitle>
+            <div style={{backgroundColor: '#51EAEA', paddingLeft: '100px', paddingRight: '100px'}}>
+                <h1 className='heading' style={{textAlign: 'center', padding: '1rem'}}>Welcome to ReactionTime</h1>
+                    <h5 className='subtitle' style={{textAlign: 'center'}}>A SIMPLER WAY TO WRITE TESTS FOR REACT'S EXPERIMENTAL CONCURRENT MODE</h5>
                 <br/>
                 <br/>
-                <Image
-                 src={Logo} alt="ReactionTime Logo"
+                <img style={{display: 'block', marginLeft: "auto", marginRight: 'auto', width: '225px', height: '225px'}}
+                 src={logo} alt="ReactionTime Logo"
                  >
-                 </Image>
+                 </img>
                  <br/>
                  <br/>
-                 <Text>
+                 <p className='text' style={{textAlign: 'center', marginLeft: "auto", marginRight: 'auto' }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                     dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
                     torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
@@ -65,8 +32,8 @@ class HomePage extends Component {
                     malesuada fames ac turpis egestas. In non lorem sit amet elit
                     placerat maximus. Pellentesque aliquam maximus risus, vel sed
                     vehicula.
-                </Text>
-                <Text>
+                </p>
+                <p className='text' style={{textAlign: 'center', marginLeft: "auto", marginRight: 'auto'}}> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                     dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
                     torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
@@ -78,8 +45,8 @@ class HomePage extends Component {
                     malesuada fames ac turpis egestas. In non lorem sit amet elit
                     placerat maximus. Pellentesque aliquam maximus risus, vel sed
                     vehicula.
-                </Text>
-            </Wrapper>
+                </p>
+            </div>
         )
     }
 }

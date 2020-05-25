@@ -3,7 +3,7 @@ import {Component} from 'react';
 // import styled from 'styled-components';
 
 const Logo = require("./resources/logo.png");
-const Background = require('./resources/0-bg/jpg');
+const Background = require('./resources/0-bg.jpg');
 
 // const Wrapper = styled.div`
 // text-align: center;

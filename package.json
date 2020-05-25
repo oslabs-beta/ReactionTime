@@ -158,7 +158,8 @@
     ],
     "setupFiles": [
       "./internals/scripts/CheckBuildsExist.js"
-    ]
+    ],
+    "collectCoverageFrom": ["**/src/**/*.js"]
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

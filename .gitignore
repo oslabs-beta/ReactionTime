@@ -87,3 +87,13 @@ typings/
 
 # Electron-Forge
 out/
+
+# Custom Git Ignore for Electrnro App
+app/dist/renderer.prod.js
+app/dist/renderer.prod.js.LICENSE
+app/dist/style.css
+app/dist/style.css.d.ts
+app/dist/style.css.map
+app/main.prod.js
+app/main.prod.js.LICENSE
+dll/renderer.dev.dll.js

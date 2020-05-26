@@ -22,7 +22,7 @@ export const SetUp = () => {
                         </Typography>
                     </CardContent>
                 </Card> 
-
+                <br/>
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">
@@ -37,23 +37,22 @@ export const SetUp = () => {
                         </Typography>
                     </CardContent>
                 </Card>
-
+                <br/>
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">
-                            Import Library
+                            Import Testing Libraries
+                        </Typography>
+                        <Typography color="textSecondary">
+                            Bring in Enzyme & React-testing-library
+                        </Typography>
+                        <br/>
+                        <Typography variant="body2" component="p" color="primary">
+                            At the top of the test file ending in .test.js that was just created, import enzyme and react-testing-library into the file.
                         </Typography>
                     </CardContent>
                 </Card>
-
-                <Card>
-                    <CardContent>
-                        <Typography variant="h5" component="h2">
-                            Import Enzyme
-                        </Typography>
-                    </CardContent>
-                </Card>
-
+                <br/>
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">
@@ -61,7 +60,7 @@ export const SetUp = () => {
                         </Typography>
                     </CardContent>
                 </Card>
-
+                <br/>
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">
@@ -69,7 +68,7 @@ export const SetUp = () => {
                         </Typography>
                     </CardContent>
                 </Card>
-
+                <br/>
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">
@@ -77,7 +76,7 @@ export const SetUp = () => {
                         </Typography>
                     </CardContent>
                 </Card>
-
+                <br/>
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">

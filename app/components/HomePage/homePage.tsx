@@ -8,7 +8,7 @@ import logo from "./resources/logo.png";
 class HomePage extends Component {
     render() {
         return (
-            <div style={{backgroundColor: '#51EAEA', height: '100%', paddingLeft: '100px', paddingRight: '100px'}}>
+            <div style={{backgroundColor: '#51EAEA', height: 'auto', width: 'auto', paddingLeft: '100px', paddingRight: '100px'}}>
                 <h1 className='heading' style={{fontFamily: "Heebo, sans-serif", fontWeight: 'bold', color: 'white', textAlign: 'center', padding: '1rem'}}>Welcome to ReactionTime</h1>
                     <h4 className='subtitle' style={{fontFamily: "Heebo, sans-serif", color: 'white', fontStyle: 'italic', textAlign: 'center'}}>A SIMPLER WAY TO WRITE TESTS FOR REACT'S EXPERIMENTAL CONCURRENT MODE</h4>
                 <br/>

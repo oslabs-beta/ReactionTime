@@ -3,57 +3,22 @@ import {Component} from 'react';
 // import styled from 'styled-components';
 
 const Logo = require("./resources/logo.png");
-const Background = require('./resources/0-bg.jpg');
-
-// const Wrapper = styled.div`
-// text-align: center;
-// background-image: url(${Background});
-// background-size: cover;
-// height: 100em;
-// `
-
-// const Image = styled.img`
-//     width: 30em;
-//     height: 30em;
-// `
-// const Title = styled.h1`
-//     padding: 1em;
-//     color: white;
-//     font-weight: 700;
-//     font-style: italic;
-// `
-
-// const SubTitle = styled.h5`
-//     color: white;
-//     font-style: italic;
-// `
-
-// const Text = styled.p`
-//     padding: 2em;
-//     color: white;
-//     font-weight: 500;
-//     margin-left: 40em;
-//     margin-right: 40em;
-//     text-align: center;
-// `
-
-
 
 class HomePage extends Component {
     render() {
         return (
-            <Wrapper>
-                <Title>Welcome to ReactionTime</Title>
-                    <SubTitle>A SIMPLER WAY TO WRITE TESTS FOR REACT'S EXPERIMENTAL CONCURRENT MODE</SubTitle>
+            <div>
+                <h1>Welcome to ReactionTime</h1>
+                    <h5>A SIMPLER WAY TO WRITE TESTS FOR REACT'S EXPERIMENTAL CONCURRENT MODE</h5>
                 <br/>
                 <br/>
-                <Image
+                <img
                  src={Logo} alt="ReactionTime Logo"
                  >
-                 </Image>
+                 </img>
                  <br/>
                  <br/>
-                 <Text>
+                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                     dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
                     torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
@@ -65,8 +30,8 @@ class HomePage extends Component {
                     malesuada fames ac turpis egestas. In non lorem sit amet elit
                     placerat maximus. Pellentesque aliquam maximus risus, vel sed
                     vehicula.
-                </Text>
-                <Text>
+                </p>
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                     dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
                     torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
@@ -78,8 +43,8 @@ class HomePage extends Component {
                     malesuada fames ac turpis egestas. In non lorem sit amet elit
                     placerat maximus. Pellentesque aliquam maximus risus, vel sed
                     vehicula.
-                </Text>
-            </Wrapper>
+                </p>
+            </div>
         )
     }
 }

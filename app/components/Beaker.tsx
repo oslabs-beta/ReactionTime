@@ -70,6 +70,7 @@ export default function SimpleCard() {
             </CardActions>
           </Card>
         </div>
+        <br/>
         {/* End Card 1 */}
         {/* Begin Card 2 */}
         <div className="box box2">
@@ -93,6 +94,7 @@ export default function SimpleCard() {
             </CardActions>
           </Card>
         </div>
+        <br/>
         {/* End Card 2 */}
         {/* Begin Card 3 */}
         <div className="box box3">
@@ -116,6 +118,7 @@ export default function SimpleCard() {
             </CardActions>
           </Card>
         </div>
+        <br/>
         {/* End Card 3 */}
         {/* Begin Card 4 */}
         <div className="box box4">

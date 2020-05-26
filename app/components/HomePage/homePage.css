@@ -1,0 +1,38 @@
+
+.wrapper {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 2000px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 15px;
+    height: 15px;
+}
+
+.title {
+    text-align: center;
+    padding-top: 12px;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    font-weight: 800;
+    padding-top: 3px;
+}
+
+.text {
+    padding: 2px;
+    color: white;
+    font-weight: 600;
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
+}

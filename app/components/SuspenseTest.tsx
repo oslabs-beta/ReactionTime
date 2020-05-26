@@ -1,30 +1,29 @@
-import React, {useState} from "react";
+import React, {useState, FormEvent} from "react";
 
 export const SuspenseTest = () => {
   const [name, setName] = useState("");
   
   let result: string;
 
-  const handleSubmit = (evt) => {
+  const handleSubmit = (evt: FormEvent) => {
       evt.preventDefault();
       result = `
       test('renders suspense fallback on a child component', () => {
-        const ComponentWrapper = (${name}) => {
-         return (
-            <React.Suspense fallback={'testFallback'}>
-              <${name} />
-            </React.Suspense>
-          );
-        };
+      \u00A0\u00A0const ComponentWrapper = (${name}) => {
+      \u00A0\u00A0\u00A0\u00A0return (
+      \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0<React.Suspense fallback={'testFallback'}>
+      \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0<${name} />
+      \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0</React.Suspense>
+      \u00A0\u00A0\u00A0\u00A0);
+      \u00A0\u00A0};
     
-        const wrapper = testingLibrary.render(<ComponentWrapper />);
+      \u00A0\u00A0const wrapper = testingLibrary.render(<ComponentWrapper />);
        
-        expect((wrapper.queryAllByText('testFallback')[0].textContent)).toMatch(/testFallback/);
-    })
+      \u00A0\u00A0expect((wrapper.queryAllByText('testFallback')[0].textContent)).toMatch(/testFallback/);
+      })
       `;
 
-      document.getElementById('123')?.append(result)
-      
+      document.getElementById('test')!.innerText = result;
   }
 
   return (
@@ -38,7 +37,7 @@ export const SuspenseTest = () => {
       </label>
       <input type="submit" value="Generate" />
       </form>
-      <div id="123">
+      <div id="test">
       </div>
     </div>
   );

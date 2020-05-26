@@ -1,46 +1,42 @@
-import React, {useState} from "react";
+import React, {useState, FormEvent} from "react";
 
 export const FallbackTest = () => {
   const [name, setName] = useState("");
   const [fallback, setFallback] = useState("");
   
   let result: string;
-  const handleSubmit = (evt) => {
+  const handleSubmit = (evt: FormEvent) => {
       evt.preventDefault();
       result = `
       if (typeof ${name} === 'undefined') {
-        test('renders fallback component', () => {
-            return expect(${name})
-    })
+      \u00A0\u00A0test('renders fallback component', () => {
+      \u00A0\u00A0\u00A0\u00A0return expect(${name});
+      })
     
-    if (!${fallback}) {
-        test('renders fallback component', () => {
-            return expect(${fallback})
-        })
+      if (!${fallback}) {
+      \u00A0\u00A0test('renders fallback component', () => {
+      \u00A0\u00A0\u00A0\u00A0return expect(${fallback});
+      \u00A0\u00A0})
+      } else {
+      \u00A0\u00A0let textFallback = ${fallback}.toString('utf-8');
+      \u00A0\u00A0let renderedFallback = testingLibrary.render(${fallback});
 
-    } else{
-
-        let textFallback = ${fallback}.toString('utf-8')
-        let renderedFallback = testingLibrary.render(${fallback})
-
-        if (typeof ${fallback} === "string") {
-            test('renders fallback string instead of component', () => {
-                const { getByText } = testingLibrary.render(${name})
-                return expect(getByText(textFallback)).toBeInTheDocument()
-            })
-        }
-        else {
-            test('renders fallback inside of suspense component', () => {
-                const wrapper = testingLibrary.render(${name})
-                return expect(wrapper.baseElement).toEqual(renderedFallback.baseElement)
-            })
-        }
-    }
-    }
+      \u00A0\u00A0if (typeof ${fallback} === "string") {
+      \u00A0\u00A0\u00A0\u00A0test('renders fallback string instead of component', () => {
+      \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0const { getByText } = testingLibrary.render(${name});
+      \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0return expect(getByText(textFallback)).toBeInTheDocument();
+      \u00A0\u00A0\u00A0\u00A0})
+      \u00A0\u00A0} else {
+      \u00A0\u00A0\u00A0\u00A0test('renders fallback inside of suspense component', () => {
+      \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0const wrapper = testingLibrary.render(${name});
+      \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0return expect(wrapper.baseElement).toEqual(renderedFallback.baseElement);
+      \u00A0\u00A0\u00A0\u00A0})
+      \u00A0\u00A0}
+      }
       `;
 
-      document.getElementById('123')?.append(result)
-      
+      document.getElementById('test')!.innerText = result;
+
   }
 
   return (
@@ -52,6 +48,7 @@ export const FallbackTest = () => {
         value={name}
         onChange={e => setName(e.target.value)} />
       </label>
+      <br></br>
       <label>
         Please enter the name of your fallback:
         <input type="text"
@@ -60,7 +57,7 @@ export const FallbackTest = () => {
       </label>
       <input type="submit" value="Generate" />
       </form>
-      <div id="123">
+      <div id="test">
       </div>
     </div>
   );

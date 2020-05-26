@@ -1,21 +1,20 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Link, Route } from 'react-router-dom';
-import { MemoryRouter as Router, Switch } from 'react-router-dom';
-
-import Home from './components/HomePage/homePage';
 import Beaker from './components/Beaker';
 import { CreateRootTest } from './components/CreateRootTest';
 import { PackageTest } from './components/PackageTest';
 import { FallbackTest } from './components/FallbackTest';
 import { SuspenseTest } from './components/SuspenseTest';
 import { Drawer, List, ListItem } from '@material-ui/core';
-import {SearchGlass} from './components/SearchGlass';
-
 import HomeIcon from '@material-ui/icons/HomeOutlined';
 import Timer from '@material-ui/icons/Timer';
 import SearchIcon from '@material-ui/icons/Search';
+import { MemoryRouter as Router, Switch } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
+import Home from './components/HomePage/homePage';
+import {SearchGlass} from './components/SearchGlass';
 import BuildOutlinedIcon from '@material-ui/icons/BuildOutlined';
+import {SetUp} from './components/SetUp';
 
 document.addEventListener('DOMContentLoaded', () => 
   render(
@@ -49,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () =>
           <Route exact path="/" component={Home} />
           <Route exact path="/tests" component={Beaker} />
           <Route exact path="/search" component={SearchGlass}/>
+          <Route exact path="/build" component={SetUp}/>
           <Route exact path="/CreateRootTest" component={CreateRootTest} />
           <Route exact path="/PackageTest" component={PackageTest} />
           <Route exact path="/FallbackTest" component={FallbackTest} />

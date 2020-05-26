@@ -17,7 +17,7 @@ export const SetUp = () => {
                             Install Jest and Enzyme
                         </Typography>
                         <br/>
-                        <Typography variant="body2" component="p" color="primary" paragraph="true">
+                        <Typography variant="body2" component="p" color="primary">
                             In your terminal, type in the following command to install the Jest and Enzyme testing libraries that you will need as dependencies: npm install jest react-testing-library enzyme
                         </Typography>
                     </CardContent>
@@ -26,12 +26,15 @@ export const SetUp = () => {
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">
-                            Create New Files
+                            Create New File
                         </Typography>
                         <Typography color="textSecondary">
-                            Install Jest and Enzyme
+                            Add Test File
                         </Typography>
                         <br/>
+                        <Typography variant="body2" component="p" color="primary">
+                            In the repositoty of your app, create a new file in your ROOT directory for your tests that will end in .test.js. You will later paste the generated tests into this file.
+                        </Typography>
                     </CardContent>
                 </Card>
 

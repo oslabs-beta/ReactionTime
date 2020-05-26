@@ -10,9 +10,10 @@ import HomeIcon from '@material-ui/icons/HomeOutlined';
 import Timer from '@material-ui/icons/Timer';
 import { MemoryRouter as Router, Switch } from 'react-router-dom';
 import { Link, Route } from 'react-router-dom';
-import Home from './components/Home'
+import Home from './components/HomePage/homePage';
 
-document.addEventListener('DOMContentLoaded', () =>
+
+document.addEventListener('DOMContentLoaded', () => 
   render(
     <div>
       <Router>

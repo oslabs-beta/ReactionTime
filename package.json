@@ -30,7 +30,7 @@
     "start": "cross-env NODE_ENV=production electron ./app/main.prod.js",
     "start-main-dev": "cross-env START_HOT=1 NODE_ENV=development electron -r ./internals/scripts/BabelRegister ./app/main.dev.ts",
     "start-renderer-dev": "cross-env NODE_ENV=development webpack-dev-server --config configs/webpack.config.renderer.dev.babel.js",
-    "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 jest",
+    "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 jest --coverage",
     "test-all": "yarn lint && yarn ts && yarn build && yarn test && yarn build-e2e && yarn test-e2e",
     "test-e2e": "node -r @babel/register ./internals/scripts/CheckBuildsExist.js && cross-env NODE_ENV=test testcafe electron:./app ./test/e2e/HomePage.e2e.ts",
     "test-e2e-live": "node -r @babel/register ./internals/scripts/CheckBuildsExist.js && cross-env NODE_ENV=test testcafe --live electron:./app ./test/e2e/HomePage.e2e.ts",
@@ -158,7 +158,8 @@
     ],
     "setupFiles": [
       "./internals/scripts/CheckBuildsExist.js"
-    ]
+    ],
+    "collectCoverageFrom": ["**/src/**/*.js"]
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -222,7 +223,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.4",
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "eslint-config-airbnb-typescript": "^6.3.1",
     "eslint-config-erb": "^0.3.0",
     "eslint-config-prettier": "^6.9.0",
@@ -290,7 +291,8 @@
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "source-map-support": "^0.5.16"
+    "source-map-support": "^0.5.16",
+    "styled-components": "^5.1.0"
   },
   "devEngines": {
     "node": ">=7.x",

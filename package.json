@@ -222,7 +222,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.4",
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "eslint-config-airbnb-typescript": "^6.3.1",
     "eslint-config-erb": "^0.3.0",
     "eslint-config-prettier": "^6.9.0",
@@ -290,7 +290,8 @@
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "source-map-support": "^0.5.16"
+    "source-map-support": "^0.5.16",
+    "styled-components": "^5.1.0"
   },
   "devEngines": {
     "node": ">=7.x",

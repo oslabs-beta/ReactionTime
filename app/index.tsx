@@ -8,11 +8,14 @@ import { SuspenseTest } from './components/SuspenseTest';
 import { Drawer, List, ListItem } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/HomeOutlined';
 import Timer from '@material-ui/icons/Timer';
+import SearchIcon from '@material-ui/icons/Search';
 import { MemoryRouter as Router, Switch } from 'react-router-dom';
 import { Link, Route } from 'react-router-dom';
-import Home from './components/Home'
+import Home from './components/HomePage/homePage';
+import {SearchGlass} from './components/SearchGlass';
 
-document.addEventListener('DOMContentLoaded', () =>
+
+document.addEventListener('DOMContentLoaded', () => 
   render(
     <div>
       <Router>
@@ -28,11 +31,17 @@ document.addEventListener('DOMContentLoaded', () =>
                 <Timer fontSize="large" />
               </Link>
             </ListItem>
+            <ListItem>
+              <Link to="/search">
+                <SearchIcon fontSize="large" />
+              </Link>
+            </ListItem>
           </List>
         </Drawer>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/tests" component={Beaker} />
+          <Route exact path="/search" component={SearchGlass}/>
           <Route exact path="/CreateRootTest" component={CreateRootTest} />
           <Route exact path="/PackageTest" component={PackageTest} />
           <Route exact path="/FallbackTest" component={FallbackTest} />

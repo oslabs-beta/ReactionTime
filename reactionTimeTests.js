@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const testingLibrary = require('@testing-library/react')
 import react from 'react';
-const ComponentWrapper = require('./app')
+// const ComponentWrapper = require('./app')
 
 // test for creatRoot() and its proper usage in index.js
 function createRootTest(indexPath) {

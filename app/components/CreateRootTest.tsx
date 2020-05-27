@@ -1,21 +1,21 @@
-import React, {useState} from "react";
+import React, {useState, FormEvent} from "react";
 
 export const CreateRootTest = () => {
   const [name, setName] = useState("");
   
   let result: string;
-  const handleSubmit = (evt) => {
+
+  const handleSubmit = (evt: FormEvent) => {
       evt.preventDefault();
       result = `
       let file = fs.readFileSync(path.resolve(__dirname, ${name})).toString("utf-8");
-        
+      
       test('index to contain createRoot', () => {
-      return expect(file).toMatch(/createRoot/)
+      \u00A0\u00A0return expect(file).toMatch(/createRoot/);
       })
       `;
 
-      document.getElementById('123')?.append(result)
-      
+    document.getElementById('test')!.innerText = result;
   }
 
   return (
@@ -29,7 +29,7 @@ export const CreateRootTest = () => {
       </label>
       <input type="submit" value="Generate" />
       </form>
-      <div id="123">
+      <div id="test">
       </div>
     </div>
   );

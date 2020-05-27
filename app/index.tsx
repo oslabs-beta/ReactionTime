@@ -13,7 +13,8 @@ import { MemoryRouter as Router, Switch } from 'react-router-dom';
 import { Link, Route } from 'react-router-dom';
 import Home from './components/HomePage/homePage';
 import {SearchGlass} from './components/SearchGlass';
-
+import BuildOutlinedIcon from '@material-ui/icons/BuildOutlined';
+import {SetUp} from './components/SetUp';
 
 document.addEventListener('DOMContentLoaded', () => 
   render(
@@ -36,12 +37,18 @@ document.addEventListener('DOMContentLoaded', () =>
                 <SearchIcon fontSize="large" />
               </Link>
             </ListItem>
+            <ListItem>
+              <Link to="/build">
+                <BuildOutlinedIcon fontSize="large" />
+              </Link>
+            </ListItem>
           </List>
         </Drawer>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/tests" component={Beaker} />
           <Route exact path="/search" component={SearchGlass}/>
+          <Route exact path="/build" component={SetUp}/>
           <Route exact path="/CreateRootTest" component={CreateRootTest} />
           <Route exact path="/PackageTest" component={PackageTest} />
           <Route exact path="/FallbackTest" component={FallbackTest} />

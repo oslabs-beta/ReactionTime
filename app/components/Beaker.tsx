@@ -67,6 +67,7 @@ export default function SimpleCard() {
             </CardActions>
           </Card>
         </div>
+        <br/>
         {/* End Card 1 */}
         {/* Begin Card 2 */}
         <div className="box box2">
@@ -90,6 +91,7 @@ export default function SimpleCard() {
             </CardActions>
           </Card>
         </div>
+        <br/>
         {/* End Card 2 */}
         {/* Begin Card 3 */}
         <div className="box box3">
@@ -113,6 +115,7 @@ export default function SimpleCard() {
             </CardActions>
           </Card>
         </div>
+        <br/>
         {/* End Card 3 */}
         {/* Begin Card 4 */}
         <div className="box box4">
@@ -122,7 +125,7 @@ export default function SimpleCard() {
                 suspenseTest
               </Typography>
               <Typography className={classes.pos} color="textSecondary">
-                Mock test to determine fallback rendersin the DOM tree
+                Mock test to determine fallback renders in the DOM tree.
               </Typography>
               <Typography variant="body2" component="p">
                 {'This will take one argument, a child component that the user expects to suspend. As of now, the suspended component must act as a standalone component'}

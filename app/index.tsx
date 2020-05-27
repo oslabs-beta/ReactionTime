@@ -16,11 +16,13 @@ import {SearchGlass} from './components/SearchGlass';
 import BuildOutlinedIcon from '@material-ui/icons/BuildOutlined';
 import {SetUp} from './components/SetUp';
 
+
 document.addEventListener('DOMContentLoaded', () => 
+
   render(
     <div>
       <Router>
-        <Drawer variant="permanent" >
+        <Drawer variant="permanent">
           <List >
             <ListItem>
               <Link to="/">

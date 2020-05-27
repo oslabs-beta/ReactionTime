@@ -94,6 +94,13 @@ export const SetUp = () => {
                         <Typography variant="h5" component="h2">
                             Copy & Paste
                         </Typography>
+                        <Typography color="textSecondary">
+                            Copy Generated Test into your File
+                        </Typography>
+                        <br/>
+                        <Typography variant="body2" component="p" color="primary">
+                            Copy the test that is generated upon providing the correct input(s) and paste the test into the test file created earlier ending in .test.js.
+                        </Typography>
                     </CardContent>
                 </Card>
                 <br/>
@@ -103,6 +110,10 @@ export const SetUp = () => {
                         <Typography variant="h5" component="h2">
                             Enjoy You Test!
                         </Typography>
+                        <Typography color="textSecondary">
+                            Copy Generated Test into your File
+                        </Typography>
+                        <br/>
                     </CardContent>
                 </Card>
         </div>

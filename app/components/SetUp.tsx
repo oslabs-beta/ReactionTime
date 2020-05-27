@@ -63,7 +63,7 @@ export const SetUp = () => {
                             Download ReactionTime
                         </Typography>
                         <Typography color="textSecondary">
-                            Download the ReactionTime App
+                            Download the ReactionTime App for your System
                         </Typography>
                         <br/>
                         <Typography variant="body2" component="p" color="primary">
@@ -77,6 +77,13 @@ export const SetUp = () => {
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             Input Names
+                        </Typography>
+                        <Typography color="textSecondary">
+                            Provide the Input for the Test You want Generated
+                        </Typography>
+                        <br/>
+                        <Typography variant="body2" component="p" color="primary">
+                            If testing for Concurrent Mode set up or verifying React Experimental mode, input the correct file path needed from your ROOT directory. If testing for the fallback component or to determine if the fallback component renders in the DOM tree, provide the suspenseful component and name of the fallback as inputs.
                         </Typography>
                     </CardContent>
                 </Card>

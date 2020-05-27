@@ -1,20 +1,21 @@
-import React, {useState} from "react";
+import React, {useState, FormEvent} from "react";
 
 export const PackageTest = () => {
   const [name, setName] = useState("");
   
   let result: string;
-  const handleSubmit = (evt) => {
+  const handleSubmit = (evt: FormEvent) => {
       evt.preventDefault();
       result = `
-      let packageFile = fs.readFileSync(path.resolve(__dirname, /${name})).toString("utf-8");
+      let packageFile = fs.readFileSync(path.resolve(__dirname, ${name})).toString("utf-8");
 
       test('package.json to contain react experimental', () => {
-      return expect(packageFile).toMatch(/\"react\": \"\^?0.0.0-experimental/)
+      \u00A0\u00A0return expect(packageFile).toMatch(/\"react\": \"\^?0.0.0-experimental/);
       })
       `;
 
-      document.getElementById('123')?.append(result)
+      document.getElementById('test')!.innerText = result;
+
       
   }
 
@@ -29,7 +30,7 @@ export const PackageTest = () => {
       </label>
       <input type="submit" value="Generate" />
       </form>
-      <div id="123">
+      <div id="test">
       </div>
     </div>
   );

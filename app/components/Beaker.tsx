@@ -56,17 +56,14 @@ export default function SimpleCard() {
                 Enables Concurrent Mode
               </Typography>
               <Typography variant="body2" component="p">
-                {`Replaces ReactDOM.render(<App />, rootNode) and enables Concurrent Mode.`}
+                {`Replaces ReactDOM.render(<App />, rootNode) and enables Concurrent Mode`}
               </Typography>
             </CardContent>
             <CardActions>
-           
                 <Button size="small" component={Link} to={'/CreateRootTest'}>
                   {' '}
-                  Code Snippet{' '}
+                  Generate Test{' '}
                 </Button>
-              {/* <Link to="/createroottest">Code Snippet</Link> */}
-              
             </CardActions>
           </Card>
         </div>
@@ -83,13 +80,13 @@ export default function SimpleCard() {
                 Verifies React Experimental
               </Typography>
               <Typography variant="body2" component="p">
-                {`Concurrent Mode is only available in the experimental builds of React.`}
+                {`Concurrent Mode is only available in the experimental builds of React`}
               </Typography>
             </CardContent>
             <CardActions>
               <Button size="small" component={Link} to={'/PackageTest'}>
                 {' '}
-                Code Snippet{' '}
+                Generate Test{' '}
               </Button>
             </CardActions>
           </Card>
@@ -104,16 +101,16 @@ export default function SimpleCard() {
                 fallbackTest
               </Typography>
               <Typography className={classes.pos} color="textSecondary">
-                Ensures fallback component is present and defined.
+                Ensures fallback component is present and defined
               </Typography>
               <Typography variant="body2" component="p">
-                {`Concurrent Mode is only available in the experimental builds of React.`}
+                {`Concurrent Mode is only available in the experimental builds of React`}
               </Typography>
             </CardContent>
             <CardActions>
               <Button size="small" component={Link} to={'/FallBackTest'}>
                 {' '}
-                Code Snippet{' '}
+                Generate Test{' '}
               </Button>
             </CardActions>
           </Card>
@@ -131,13 +128,13 @@ export default function SimpleCard() {
                 Mock test to determine fallback renders in the DOM tree.
               </Typography>
               <Typography variant="body2" component="p">
-                {`This will take one argument, a child component that the user expects to suspend. As of now, the suspended component must act as a standalone component.`}
+                {'This will take one argument, a child component that the user expects to suspend. As of now, the suspended component must act as a standalone component'}
               </Typography>
             </CardContent>
             <CardActions>
               <Button size="small" component={Link} to={'/SuspenseTest'}>
                 {' '}
-                Code Snippet{' '}
+                Generate Test{' '}
               </Button>
             </CardActions>
           </Card>

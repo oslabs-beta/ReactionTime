@@ -111,9 +111,12 @@ export const SetUp = () => {
                             Enjoy You Test!
                         </Typography>
                         <Typography color="textSecondary">
-                            Copy Generated Test into your File
+                            Test Your Files Using the Command Line
                         </Typography>
                         <br/>
+                        <Typography variant="body2" component="p" color="primary">
+                            After pasting the desired tests into your testing file, type in: npm test, at the command line of your termianl and see if your tests pass and you get those green checks!
+                        </Typography>
                     </CardContent>
                 </Card>
         </div>

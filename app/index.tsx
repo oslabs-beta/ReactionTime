@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () =>
   render(
     <div>
       <Router>
-        <Drawer variant="permanent">
-          <List>
+        <Drawer variant="permanent" >
+          <List >
             <ListItem>
               <Link to="/">
                 <HomeIcon fontSize="large" />

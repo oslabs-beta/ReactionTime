@@ -1,145 +1,93 @@
 import React from "react";
 
-// import react router
-import { MemoryRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-// import routes for react router
-import { CreateRootTest } from "./CreateRootTest";
-import { PackageTest } from "./PackageTest";
-import { FallbackTest } from "./FallbackTest";
-import { SuspenseTest } from "./SuspenseTest";
-
-// Import stylesheet for flexbox grid
-import "./Beaker.css";
-
 // Import Material UI Card Component
-import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import {Link} from "react-router-dom"
 
-const useStyles = makeStyles({
-  root: {
-    minWidth: 275
-  },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)"
-  },
-  title: {
-    fontSize: 14
-  },
-  pos: {
-    marginBottom: 12
-  }
-});
 
 export default function SimpleCard() {
-  const classes = useStyles();
 
   // Rendering our Components Below
   return (
     // Begin 2x2
     // <Router>
-      <div className="grid2x2" style={{paddingLeft: '80px'}}>
+      <div style={{paddingLeft: '80px', paddingTop:'20px', paddingRight:'15px', display:'Flex', alignItems:'center', justifyContent:'center'}}>
         {/* Begin Card 1 */}
-        <div className="box box1">
-          <Card className={classes.root}>
+        <div>
+          <div style={{padding:'10px'}}>
+            <Link to={'/CreateRootTest'} style={{textDecoration:'none'}}>
+            <Card style={{height:'210px', width:'420px'}}>
+              <CardContent>
+                <Typography variant="h5" component="h2">
+                  Concurrent Setup Test
+                </Typography>
+                <Typography >
+                  Enables Concurrent Mode
+                </Typography>
+                <Typography variant="body2" component="p">
+                  {`Replaces ReactDOM.render(<App />, rootNode) and enables Concurrent Mode`}
+                </Typography>
+              </CardContent>
+            </Card>
+            </Link>
+            </div>
+            <div style={{padding:'10px'}}>
+              <Link to={'/PackageTest'} style={{textDecoration:'none'}}>
+                <Card style={{height:'210px', width:'420px'}}>
+                  <CardContent>
+                    <Typography variant="h5" component="h2">
+                      React Experimental Test
+                    </Typography>
+                    <Typography  >
+                      Verifies React Experimental
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                      {`Concurrent Mode is only available in the experimental builds of React`}
+                    </Typography>
+                  </CardContent>
+                </Card>
+            </Link>
+           </div>
+          </div>
+        <div >
+          <div style={{padding:'10px'}}>
+          <Link to={'/FallBackTest'} style={{textDecoration:'none'}}>
+          <Card style={{height:'210px', width:'420px'}}>
             <CardContent>
               <Typography variant="h5" component="h2">
-                createRoot
+                Component Fallback Test
               </Typography>
-              <Typography className={classes.pos} color="textSecondary">
-                Enables Concurrent Mode
-              </Typography>
-              <Typography variant="body2" component="p">
-                {`Replaces ReactDOM.render(<App />, rootNode) and enables Concurrent Mode`}
-              </Typography>
-            </CardContent>
-            <CardActions>
-                <Button size="small" component={Link} to={'/CreateRootTest'}>
-                  {' '}
-                  Generate Test{' '}
-                </Button>
-            </CardActions>
-          </Card>
-        </div>
-        <br/>
-        {/* End Card 1 */}
-        {/* Begin Card 2 */}
-        <div className="box box2">
-          <Card className={classes.root}>
-            <CardContent>
-              <Typography variant="h5" component="h2">
-                packageTest
-              </Typography>
-              <Typography className={classes.pos} color="textSecondary">
-                Verifies React Experimental
-              </Typography>
-              <Typography variant="body2" component="p">
-                {`Concurrent Mode is only available in the experimental builds of React`}
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small" component={Link} to={'/PackageTest'}>
-                {' '}
-                Generate Test{' '}
-              </Button>
-            </CardActions>
-          </Card>
-        </div>
-        <br/>
-        {/* End Card 2 */}
-        {/* Begin Card 3 */}
-        <div className="box box3">
-          <Card className={classes.root}>
-            <CardContent>
-              <Typography variant="h5" component="h2">
-                fallbackTest
-              </Typography>
-              <Typography className={classes.pos} color="textSecondary">
+              <Typography >
                 Ensures fallback component is present and defined
               </Typography>
               <Typography variant="body2" component="p">
                 {`Concurrent Mode is only available in the experimental builds of React`}
               </Typography>
             </CardContent>
-            <CardActions>
-              <Button size="small" component={Link} to={'/FallBackTest'}>
-                {' '}
-                Generate Test{' '}
-              </Button>
-            </CardActions>
           </Card>
-        </div>
-        <br/>
-        {/* End Card 3 */}
-        {/* Begin Card 4 */}
-        <div className="box box4">
-          <Card className={classes.root}>
+          </Link>
+          </div>
+          <div style={{padding:'10px'}}>
+          <Link to={'/SuspenseTest'} style={{textDecoration:'none'}}>
+          <Card style={{height:'210px', width:'420px'}}>
             <CardContent>
               <Typography variant="h5" component="h2">
-                suspenseTest
+                Component Suspense Test
               </Typography>
-              <Typography className={classes.pos} color="textSecondary">
+              <Typography >
                 Mock test to determine fallback renders in the DOM tree.
               </Typography>
               <Typography variant="body2" component="p">
                 {'This will take one argument, a child component that the user expects to suspend. As of now, the suspended component must act as a standalone component'}
               </Typography>
             </CardContent>
-            <CardActions>
-              <Button size="small" component={Link} to={'/SuspenseTest'}>
-                {' '}
-                Generate Test{' '}
-              </Button>
-            </CardActions>
           </Card>
+          </Link>
+          </div>
         </div>
       </div>
-    // </Router>
+
   );
 }

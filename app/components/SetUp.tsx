@@ -8,6 +8,7 @@ export const SetUp = () => {
     return (
         <div style={{paddingLeft: '80px'}}>
             <h1 style={{fontFamily: "Heebo, sans-serif", fontStyle: 'italic'}}>How to Use ReactionTime</h1>
+                {/*step one*/}
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">
@@ -23,6 +24,7 @@ export const SetUp = () => {
                     </CardContent>
                 </Card> 
                 <br/>
+                {/*step two*/}
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">
@@ -38,6 +40,7 @@ export const SetUp = () => {
                     </CardContent>
                 </Card>
                 <br/>
+                {/*step three*/}
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">
@@ -53,14 +56,23 @@ export const SetUp = () => {
                     </CardContent>
                 </Card>
                 <br/>
+                {/*step four*/}
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             Download ReactionTime
                         </Typography>
+                        <Typography color="textSecondary">
+                            Download the ReactionTime App
+                        </Typography>
+                        <br/>
+                        <Typography variant="body2" component="p" color="primary">
+                            Visit www.github.com/oslabs-beta/ReactionTime to download the ReactionTime App for either MacOS or Windows PC
+                        </Typography>
                     </CardContent>
                 </Card>
                 <br/>
+                {/*step five*/}
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">
@@ -69,6 +81,7 @@ export const SetUp = () => {
                     </CardContent>
                 </Card>
                 <br/>
+                {/*step six*/}
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">
@@ -77,6 +90,7 @@ export const SetUp = () => {
                     </CardContent>
                 </Card>
                 <br/>
+                {/*step seven*/}
                 <Card>
                     <CardContent>
                         <Typography variant="h5" component="h2">

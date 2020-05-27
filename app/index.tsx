@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () =>
   render(
     <div>
       <Router>
-        <Drawer variant="permanent" >
+        <Drawer variant="permanent" style={{backgroundColor:'#363636 !important'}}>
           <List >
             <ListItem>
               <Link to="/">

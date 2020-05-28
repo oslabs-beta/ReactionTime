@@ -73,6 +73,7 @@ const StyledCheckCircleOutlineRoundedIcon = withStyles({
 // })(BuildOutlinedIcon);
 
 document.addEventListener('DOMContentLoaded', () => 
+
   render(
     <div>
       <Router>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import './homePage.css';
 
-import logo from "./resources/logo_transparent.png";
+import logo from "./resources/logo_transparent_blue.png";
 
 
 class HomePage extends Component {
@@ -14,7 +14,7 @@ class HomePage extends Component {
                     <h4 className='subtitle' style={{ fontFamily: "Heebo, sans-serif", color: '#ebebeb', fontStyle: 'italic', textAlign: 'center' }}>A SIMPLER WAY TO WRITE TESTS FOR REACT'S EXPERIMENTAL CONCURRENT MODE</h4>
                     <br />
                     <br />
-                    <img style={{ display: 'block', marginLeft: "auto", marginRight: 'auto', width: '225px', height: '225px' }}
+                    <img style={{ display: 'block', marginLeft: "auto", marginRight: 'auto', width: '250px', height: '250px' }}
                         src={logo} alt="ReactionTime Logo"
                     >
                     </img>

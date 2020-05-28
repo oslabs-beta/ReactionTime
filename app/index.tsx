@@ -6,24 +6,17 @@ import { PackageTest } from './components/PackageTest';
 import { FallbackTest } from './components/FallbackTest';
 import { SuspenseTest } from './components/SuspenseTest';
 import { Drawer, List, ListItem } from '@material-ui/core';
-// import HomeIcon from '@material-ui/icons/HomeOutlined';
-import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
-import Timer from '@material-ui/icons/Timer';
-import SearchIcon from '@material-ui/icons/Search';
 import { MemoryRouter as Router, Switch } from 'react-router-dom';
 import { Link, Route } from 'react-router-dom';
 import Home from './components/HomePage/homePage';
 import {SearchGlass} from './components/SearchGlass';
-import BuildOutlinedIcon from '@material-ui/icons/BuildOutlined';
 import {SetUp} from './components/SetUp';
 import { withStyles } from '@material-ui/core/styles';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
-import PowerSettingsNewRoundedIcon from '@material-ui/icons/PowerSettingsNewRounded';
-import SpeedRoundedIcon from '@material-ui/icons/SpeedRounded';
 import TimerRoundedIcon from '@material-ui/icons/TimerRounded';
-// import HelpRoundedIcon from '@material-ui/icons/HelpRounded';
 import HelpOutlineRoundedIcon from '@material-ui/icons/HelpOutlineRounded';
 import CheckCircleOutlineRoundedIcon from '@material-ui/icons/CheckCircleOutlineRounded';
+
 const StyledDrawer = withStyles({
   paper: {
     background: '#303030'
@@ -53,24 +46,6 @@ const StyledCheckCircleOutlineRoundedIcon = withStyles({
     fill: '#eeeeee'
   }
 })(CheckCircleOutlineRoundedIcon);
-
-// const StyledTimer = withStyles({
-//   root: {
-//     fill: '#111111'
-//   }
-// })(Timer);
-
-// const StyledSearchIcon = withStyles({
-//   root: {
-//     fill: '#111111'
-//   }
-// })(SearchIcon);
-
-// const StyledBuildOutlinedIcon = withStyles({
-//   root: {
-//     fill: '#111111'
-//   }
-// })(BuildOutlinedIcon);
 
 document.addEventListener('DOMContentLoaded', () => 
 

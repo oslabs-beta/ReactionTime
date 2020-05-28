@@ -1,6 +1,9 @@
 declare const styles: {
-  readonly "Beaker__grid2x2__3rAeP": string;
-  readonly "Beaker__box__2w4ce": string;
+  readonly "homePage__wrapper__1eJRi": string;
+  readonly "homePage__logo__31tqJ": string;
+  readonly "homePage__title__1-zXv": string;
+  readonly "homePage__subtitle__3y2Jp": string;
+  readonly "homePage__text__3_mF9": string;
 };
 export = styles;
 

@@ -26,7 +26,7 @@ import HelpOutlineRoundedIcon from '@material-ui/icons/HelpOutlineRounded';
 import CheckCircleOutlineRoundedIcon from '@material-ui/icons/CheckCircleOutlineRounded';
 const StyledDrawer = withStyles({
   paper: {
-    background: '#2f2f2f',
+    background: '#303030'
   }
 })(Drawer);
 

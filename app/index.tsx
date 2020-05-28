@@ -15,6 +15,13 @@ import Home from './components/HomePage/homePage';
 import {SearchGlass} from './components/SearchGlass';
 import BuildOutlinedIcon from '@material-ui/icons/BuildOutlined';
 import {SetUp} from './components/SetUp';
+import { withStyles } from '@material-ui/core/styles';
+
+const StyledDrawer = withStyles({
+  paper: {
+    background: '#222831'
+  }
+})(Drawer);
 
 
 document.addEventListener('DOMContentLoaded', () => 
@@ -22,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () =>
   render(
     <div>
       <Router>
-        <Drawer variant="permanent">
+        <StyledDrawer variant="permanent">
           <List >
             <ListItem>
               <Link to="/">
@@ -45,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () =>
               </Link>
             </ListItem>
           </List>
-        </Drawer>
+        </StyledDrawer>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/tests" component={Beaker} />
@@ -59,5 +66,6 @@ document.addEventListener('DOMContentLoaded', () =>
       </Router>
     </div>,
     document.getElementById('root')
+  
   )
 );

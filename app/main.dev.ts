@@ -59,6 +59,7 @@ const createWindow = async () => {
     width: 1024,
     height: 728,
     backgroundColor: '#262626',
+<<<<<<< HEAD
     webPreferences:
       // process.env.NODE_ENV === 'development' || process.env.E2E_BUILD === 'true'
       //   ? {
@@ -68,6 +69,19 @@ const createWindow = async () => {
       //       preload: path.join(__dirname, 'dist/renderer.prod.js')
       //     }
       {nodeIntegration: true}
+=======
+    // webPreferences:
+    //   process.env.NODE_ENV === 'development' || process.env.E2E_BUILD === 'true'
+    //     ? {
+    //         nodeIntegration: true
+    //       }
+    //     : {
+    //         preload: path.join(__dirname, 'dist/renderer.prod.js')
+    //       }
+    webPreferences: {
+      nodeIntegration: true
+    }
+>>>>>>> b2887eb8e0c5c501145c98579b1fd080592a4e1f
   });
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);

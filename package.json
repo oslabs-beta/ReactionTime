@@ -287,12 +287,7 @@
     "react-hot-loader": "^4.12.19",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.2.0",
-<<<<<<< HEAD
-    "source-map-support": "^0.5.16",
-    "styled-components": "^5.1.0"
-=======
     "source-map-support": "^0.5.16"
->>>>>>> b2887eb8e0c5c501145c98579b1fd080592a4e1f
   },
   "devEngines": {
     "node": ">=7.x",

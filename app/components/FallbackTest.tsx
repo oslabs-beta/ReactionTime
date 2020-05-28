@@ -65,7 +65,7 @@ export const FallbackTest = () => {
         <Typography  variant="body2" component="p">
           Please enter the name of your fallback component: 
         </Typography>
-          <TextField id="outlined-basic" variant='standard' label="Fallback" value={fallback}
+          <TextField id="outlined-basic" variant='standard' label="Fallback Name" value={fallback}
           onChange={e => setFallback(e.target.value)} color="primary" style={{color:"#ebebeb"}}/> 
         <div style={{display:'flex', alignItems:'flex-end',justifyContent:'space-around', paddingLeft:'120px', paddingRight:'120px', paddingTop:'15px'}}>
            </div>

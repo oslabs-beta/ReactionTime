@@ -34,7 +34,7 @@ export const CreateRootTest = () => {
         <form onSubmit={handleSubmit} style={{padding:'25px'}}>
           
         {/* <div style={{display:'flex', flexDirection:'row', alignItems:'center',justifyContent:'center'}}> */}
-        <Typography variant="h5" component="h5">
+          <Typography variant="h5" component="h5">
           Please enter the file path of your index.jsx from the root: 
           </Typography>
           <br />

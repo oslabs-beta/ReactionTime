@@ -1,4 +1,3 @@
-
 .wrapper {
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -30,7 +29,7 @@
 
 .text {
     padding: 2px;
-    color: white;
+    color: #eeeeee;
     font-weight: 600;
     margin-left: 40%;
     margin-right: 40%;

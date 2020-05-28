@@ -29,17 +29,31 @@ export const PackageTest = () => {
   });
 
   return (
-    <div style={{paddingLeft: '80px'}}>
-      <form onSubmit={handleSubmit}>
-      <label>
+    <div style={{paddingLeft: '80px', display:'Flex',alignItems:'center',justifyContent:'center'}}>
+      <div style={{paddingTop:'20px', paddingRight:'20px'}}>
+        <Card style={{width:'680px',height:'420px', backgroundColor:'#303030', color:'#ebebeb' }}>
+        <form onSubmit={handleSubmit} style={{padding:'25px'}}>
+          
+        {/* <div style={{display:'flex', flexDirection:'row', alignItems:'center',justifyContent:'center'}}> */}
+        <Typography variant="h5" component="h5">
         Please enter the file path of your package.json from the root:
-        <input type="text"
-        value={name}
-        onChange={e => setName(e.target.value)} />
-      </label>
-      <input type="submit" value="Generate" />
-      </form>
-      <div id="test">
+        </Typography>
+          <br />
+          <br />
+          <div style={{display:'flex', alignItems:'flex-end',justifyContent:'space-around', paddingLeft:'120px', paddingRight:'120px', paddingTop:'15px'}}>
+          <ThemeProvider theme={darkTheme}>
+          <TextField id="outlined-basic" variant='standard' label="/FilePath/" value={name}
+          onChange={e => setName(e.target.value)} color="primary" style={{color:"#ebebeb"}}/> 
+        <Button type="submit" variant="outlined" size="large" >Generate</Button>
+        {/* </div> */}
+        </ThemeProvider>
+        </div>
+        </form>
+        <Typography variant="body2" component="p">
+      <div id="test" style={{padding:'40px'}}>
+      </div>
+      </Typography>
+        </Card>
       </div>
     </div>
   );

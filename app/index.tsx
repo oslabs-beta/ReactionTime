@@ -19,7 +19,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 const StyledDrawer = withStyles({
   paper: {
-    background: '#222831'
+    background: '#303030'
   }
 })(Drawer);
 

@@ -18,7 +18,7 @@ export default function SimpleCard() {
         <div>
           <div style={{padding:'10px'}}>
             <Link to={'/CreateRootTest'} style={{textDecoration:'none'}}>
-            <Card style={{height:'210px', width:'420px'}}>
+            <Card style={{height:'210px', width:'420px', backgroundColor:'#303030', color:'#ebebeb '}}>
               <CardContent>
                 <Typography variant="h5" component="h2">
                   Concurrent Setup Test
@@ -35,7 +35,7 @@ export default function SimpleCard() {
             </div>
             <div style={{padding:'10px'}}>
               <Link to={'/PackageTest'} style={{textDecoration:'none'}}>
-                <Card style={{height:'210px', width:'420px'}}>
+                <Card style={{height:'210px', width:'420px', backgroundColor:'#303030', color:'#d3d3d3 '}}>
                   <CardContent>
                     <Typography variant="h5" component="h2">
                       React Experimental Test
@@ -54,7 +54,7 @@ export default function SimpleCard() {
         <div >
           <div style={{padding:'10px'}}>
           <Link to={'/FallBackTest'} style={{textDecoration:'none'}}>
-          <Card style={{height:'210px', width:'420px'}}>
+          <Card style={{height:'210px', width:'420px', backgroundColor:'#303030', color:'#d3d3d3 '}}>
             <CardContent>
               <Typography variant="h5" component="h2">
                 Component Fallback Test
@@ -71,7 +71,7 @@ export default function SimpleCard() {
           </div>
           <div style={{padding:'10px'}}>
           <Link to={'/SuspenseTest'} style={{textDecoration:'none'}}>
-          <Card style={{height:'210px', width:'420px'}}>
+          <Card style={{height:'210px', width:'420px', backgroundColor:'#303030', color:'#d3d3d3 '}}>
             <CardContent>
               <Typography variant="h5" component="h2">
                 Component Suspense Test

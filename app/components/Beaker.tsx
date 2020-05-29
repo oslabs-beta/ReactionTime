@@ -4,14 +4,28 @@ import React from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+
 import {Link} from "react-router-dom"
 
+fontFamily: "Raleway, sans-serif"
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      'Raleway',
+      'sans-serif',
+    ].join(','),
+  },
+});
 
 export default function SimpleCard() {
 
   
   return (
-      <div style={{paddingLeft: '80px', paddingTop:'20px', paddingRight:'15px', display:'Flex', alignItems:'center', justifyContent:'center'}}>
+    // Begin 2x2
+    // <Router>
+    <div style={{ paddingLeft: '80px', paddingTop: '20px', paddingRight: '15px', display: 'Flex', alignItems: 'center', justifyContent: 'center' }}>
+        {/* Begin Card 1 */}
         <div>
           <div style={{padding:'10px'}}>
             <Link to={'/CreateRootTest'} style={{textDecoration:'none'}}>

@@ -7,9 +7,9 @@ import Typography from "@material-ui/core/Typography";
 export const SetUp = () => {
     return (
         <div style={{paddingLeft: '80px'}}>
-            <h1 style={{fontFamily: "Heebo, sans-serif", color: "#EBEBEB"}}>How to Use ReactionTime</h1>
+            <h1 style={{fontFamily: "Raleway, sans-serif", color: "#EBEBEB"}}>How to Use ReactionTime</h1>
                 {/*step one*/}
-                <Card style={{backgroundColor: '#303030', color: '#EBEBEB'}}>
+            <Card style={{ backgroundColor: '#303030', color: '#EBEBEB', fontFamily: "Raleway, sans-serif"}}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             1. Install Testing Libraries
@@ -25,7 +25,7 @@ export const SetUp = () => {
                 </Card> 
                 <br/>
                 {/*step two*/}
-                <Card style={{backgroundColor: '#303030', color: '#EBEBEB'}}>
+            <Card style={{ backgroundColor: '#303030', color: '#EBEBEB', fontFamily: "Raleway, sans-serif"}}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             2. Create New File
@@ -41,7 +41,7 @@ export const SetUp = () => {
                 </Card>
                 <br/>
                 {/*step three*/}
-                <Card style={{backgroundColor: '#303030', color: '#EBEBEB'}}>
+            <Card style={{ backgroundColor: '#303030', color: '#EBEBEB', fontFamily: "Raleway, sans-serif"}}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             3. Import Testing Libraries
@@ -57,7 +57,7 @@ export const SetUp = () => {
                 </Card>
                 <br/>
                 {/*step four*/}
-                <Card style={{backgroundColor: '#303030', color: '#EBEBEB'}}>
+            <Card style={{ backgroundColor: '#303030', color: '#EBEBEB', fontFamily: "Raleway, sans-serif"}}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             4. Download ReactionTime
@@ -73,7 +73,7 @@ export const SetUp = () => {
                 </Card>
                 <br/>
                 {/*step five*/}
-                <Card style={{backgroundColor: '#303030', color: '#EBEBEB'}}>
+            <Card style={{ backgroundColor: '#303030', color: '#EBEBEB', fontFamily: "Raleway, sans-serif"}}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             5. Input Names
@@ -89,7 +89,7 @@ export const SetUp = () => {
                 </Card>
                 <br/>
                 {/*step six*/}
-                <Card style={{backgroundColor: '#303030', color: '#EBEBEB'}}>
+            <Card style={{ backgroundColor: '#303030', color: '#EBEBEB', fontFamily: "Raleway, sans-serif"}}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             6. Copy & Paste
@@ -105,7 +105,7 @@ export const SetUp = () => {
                 </Card>
                 <br/>
                 {/*step seven*/}
-                <Card style={{backgroundColor: '#303030', color: '#EBEBEB'}}>
+            <Card style={{ backgroundColor: '#303030', color: '#EBEBEB', fontFamily: "Raleway, sans-serif"}}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             7. Enjoy Your Test!

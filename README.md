@@ -6,7 +6,7 @@
 ReactionTime is an application to help users build tests for the newest features of React Concurrent mode.
 
 ## How to install
-Currently under construction...
+Looking for the application? Navigate to reactiontimeapp.com to install it on windows or mac!
 
 ## Quick Start
 Currently under construction...

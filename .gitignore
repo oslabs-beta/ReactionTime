@@ -88,7 +88,7 @@ typings/
 # Electron-Forge
 out/
 
-# Custom Git Ignore for Electrnro App
+# Custom Git Ignore for Electron App
 app/dist/renderer.prod.js
 app/dist/renderer.prod.js.LICENSE
 app/dist/style.css

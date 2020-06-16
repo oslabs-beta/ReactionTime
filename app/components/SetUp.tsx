@@ -15,11 +15,11 @@ export const SetUp = () => {
                             1. Install Testing Libraries
                         </Typography>
                         <Typography style={{color: '#3F51B5', fontStyle: "italic", paddingLeft: "25px"}}>
-                            Install Jest & Enzyme
+                            Install Jest & React-Testing-Library
                         </Typography>
                         <br/>
                         <Typography variant="body1" component="h2" style={{color: "#EBEBEB"}}>
-                            In your terminal, type in the following command to install the Jest and Enzyme testing libraries that you will need as dependencies: npm install jest react-testing-library enzyme.
+                            In your terminal, type in the following command to install the Jest and Enzyme testing libraries that you will need as dependencies: npm install jest react-testing-library 
                         </Typography>
                     </CardContent>
                 </Card> 
@@ -47,11 +47,11 @@ export const SetUp = () => {
                             3. Import Testing Libraries
                         </Typography>
                         <Typography style={{color: '#3F51B5', fontStyle: "italic", paddingLeft: "25px"}}>
-                            Bring in Enzyme & React-testing-library
+                            Bring in React-testing-library
                         </Typography>
                         <br/>
                         <Typography variant="body1" component="h2" style={{color: "#EBEBEB"}}>
-                            At the top of the test file ending in .test.js that was just created, import enzyme and react-testing-library into the file.
+                            At the top of the test file ending in .test.js that was just created, import  react-testing-library into the file.
                         </Typography>
                     </CardContent>
                 </Card>
@@ -67,7 +67,7 @@ export const SetUp = () => {
                         </Typography>
                         <br/>
                         <Typography variant="body1" component="h2" style={{color: "#EBEBEB"}}>
-                            Visit www.github.com/oslabs-beta/ReactionTime to download the ReactionTime App for either MacOS or Windows PC
+                            Visit www.reactiontimeapp.com to download the ReactionTime App for either MacOS or Windows PC
                         </Typography>
                     </CardContent>
                 </Card>
@@ -115,7 +115,7 @@ export const SetUp = () => {
                         </Typography>
                         <br/>
                         <Typography variant="body1" component="h2" style={{color: "#EBEBEB"}}>
-                            After pasting the desired tests into your testing file, type in: npm test, at the command line of your termianl and see if your tests pass and you get those green checks!
+                            After pasting the desired tests into your testing file, type in: npm test, at the command line of your terminal and see if your tests pass and you get those green checks!
                         </Typography>
                     </CardContent>
                 </Card>

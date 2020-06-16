@@ -1,0 +1,5 @@
+owner: electron-react-boilerplate
+repo: electron-react-boilerplate
+provider: github
+private: false
+updaterCacheDirName: electron-react-boilerplate-updater

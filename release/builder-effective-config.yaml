@@ -1,0 +1,37 @@
+directories:
+  output: release
+  buildResources: resources
+productName: ReactionTime
+appId: org.develar.ElectronReact
+files:
+  - filter:
+      - dist/
+      - node_modules/
+      - app.html
+      - main.prod.js
+      - main.prod.js.map
+      - package.json
+dmg:
+  contents:
+    - x: 130
+      'y': 220
+    - x: 410
+      'y': 220
+      type: link
+      path: /Applications
+win:
+  target:
+    - nsis
+    - msi
+linux:
+  target:
+    - deb
+    - rpm
+    - AppImage
+  category: Development
+publish:
+  provider: github
+  owner: electron-react-boilerplate
+  repo: electron-react-boilerplate
+  private: false
+electronVersion: 7.1.13
